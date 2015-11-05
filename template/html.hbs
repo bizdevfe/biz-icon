@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>{{fontName}}</title>
+<link type="text/css" rel="stylesheet" href="{{cssDest}}" />
+<style>
+    body {font-family: Arial; margin: 0; padding: 30px}
+    .preview {}
+    .preview-icon {display: inline-block; margin: 20px 20px 0 0; width: 400px}
+    .old-ie {display: none}
+    .name {display: block}
+</style>
+<!--[if lte IE 7]>
+<style>
+    .modern {display: none}
+    .old-ie {display: inline-block}
+</style>
+<![endif]-->
+</head>
+
+<body>
+    <h1>{{fontName}}</h1>
+    <div class="preview">
+        {{#each codepoints}}
+        <span class="preview-icon">
+            <span class="{{../baseClass}} {{../classPrefix}}{{@key}} modern"></span>
+            <span class="{{../baseClass}} old-ie">&#x{{this}};</span>
+            <span class="name">{{@key}}</span>
+        </span>
+        {{/each}}
+    </div>
+</body>
+</html>

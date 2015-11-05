@@ -1,0 +1,32 @@
+{
+  "name": "biz-icon",
+  "version": "0.1.0",
+  "description": "A generator of webfonts",
+  "keywords": [
+    "iconfonts",
+    "webfonts"
+  ],
+  "homepage": "http://bizdevfe.github.io/biz-icon",
+  "bugs": {
+    "url": "https://github.com/bizdevfe/biz-icon/issues"
+  },
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Ricky",
+      "email": "hyenasa@gmail.com"
+    }
+  ],
+  "main": "./preview.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bizdevfe/biz-icon.git"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-json-generator": "^0.1.0",
+    "material-design-icons": "^2.0.0",
+    "underscore": "^1.8.3",
+    "webfonts-generator": "^0.3.1"
+  }
+}

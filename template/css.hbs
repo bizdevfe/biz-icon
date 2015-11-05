@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "{{fontName}}";
+    src: {{{srcForOldIE}}}; /* For IE6-8 */
+    src: {{{src}}};
+}
+
+.{{baseClass}} {
+    font-family: "{{fontName}}" !important;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'liga';
+    -webkit-text-stroke-width: 0.2px;
+}
+
+{{#each codepoints}}
+.{{../classPrefix}}{{@key}}:before {
+    content: "\\{{this}}";
+}
+{{/each}}
