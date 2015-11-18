@@ -12,12 +12,11 @@
   ],
   "homepage": "https://github.com/bizdevfe/biz-icon",
   "moduleType": ["node"],
-  "devDependencies": {
+  "dependencies": {
     "grunt": "^0.4.5",
     "grunt-json-generator": "^0.1.0",
-    "material-design-icons": "^2.0.0",
-    "underscore": "^1.8.3",
     "webfonts-generator": "^0.3.1"
+    "lodash": "^3.10.1"
   },
   "ignore": [
     "**/.*",

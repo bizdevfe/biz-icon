@@ -1,8 +1,8 @@
 var path = require('path');
-var _ = require('underscore');
+var _ = require('lodash');
 
 module.exports = function(grunt) {
-    var materialPath = './node_modules/material-design-icons/',
+    /*var materialPath = './node_modules/material-design-icons/',
         indexFile = grunt.file.read(materialPath + 'index.html'),
         pattern = /<div><img\ssrc='(.*)'><br>(.*)<\/div>/ig,
         result = indexFile.match(pattern),
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
                 options: mdiConfig
             }
         }
-    });
+    });*/
     
     grunt.registerTask('add_patch', function() {
         var patchPath = './patch/',
@@ -82,5 +82,5 @@ module.exports = function(grunt) {
     
     grunt.loadNpmTasks('grunt-json-generator');
     
-    grunt.registerTask('default', ['json_generator', 'add_patch', 'generate_font']);
+    grunt.registerTask('default', ['add_patch', 'generate_font']);
 };

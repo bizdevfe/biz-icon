@@ -6,7 +6,7 @@ BizIcon - A generator of webfonts
 
 [![NPM Stat][npm-stat-image]][npm-stat-url]
 
-A generator of webfonts from SVG icons based [webfonts-generator](https://github.com/sunflowerdeath/webfonts-generator). The icons are from Google's [Material Design Icons](https://github.com/google/material-design-icons).
+A generator of webfonts from SVG icons based [webfonts-generator](https://github.com/sunflowerdeath/webfonts-generator).
 
 Features:
 --------
@@ -37,11 +37,11 @@ To add or remove icons, just edit the `icons.json` file:
       "fontDest": "font/",           // Path for generated font files
       "cssDest": "css/biz-icon.css", // Path for generated css file
       "cssFontsPath": "../font/"     // Fonts path used in css file
-      "root": "./node_modules/material-design-icons/", // SVG files root directory
+      "root": "svg/", // SVG files root directory
       "icons": [
         {
-          "name": "ic_3d_rotation",                          // Suffix name of css class
-          "svg": "action/svg/design/ic_3d_rotation_24px.svg" // SVG files path relative to root
+          "name": "search",   // Suffix name of css class
+          "svg": "search.svg" // SVG files path relative to root
         },
 		...
       ]
